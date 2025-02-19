@@ -23,28 +23,28 @@ export default function Menu() {
           className={styles.menuButton}
           onClick={() => setModalOpen(true)}
         >
-          Iniciar Produção
+          INICAR PRODUÇÃO
         </button>
 
         <button
           className={styles.menuButton}
           onClick={() => setAdicionarEventoOpen(true)}
         >
-          Adicionar Evento
+          ADICONAR EVENTO
         </button>
 
         <button
           className={styles.menuButton}
           onClick={() => setFinalizarModalOpen(true)}
         >
-          Finalizar Produção
+          FINALIZAR PRODUÇÃO
         </button>
 
         <button
           className={`${styles.menuButton} ${styles.red}`}
           onClick={() => setEventoModalOpen(true)}
         >
-          Finalizar Evento
+          FINALIZAR EVENTO
         </button>
       </div>
 
