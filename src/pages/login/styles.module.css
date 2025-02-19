@@ -101,20 +101,18 @@
   color: #aaa;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
-  background: white; /* 🔹 Fundo branco para cobrir a borda */
-  padding: 0 5px; /* 🔹 Pequeno espaçamento para cobrir parte da borda */
+  background: white;
+  padding: 0 5px;
 }
 
-/* Quando o input está focado OU preenchido */
 .loginInput:focus + label,
 .loginInput:not(:placeholder-shown) + label {
-  top: 1px; /* 🔹 Mantém o label na linha da borda */
+  top: 1px;
   font-size: 12px;
   color: #0070f3;
-  background: white; /* 🔹 Mantém o fundo branco para cobrir parte da borda */
+  background: white;
 }
 
-/* Quando o input está focado, a borda continua visível, exceto onde a label está */
 .loginInput:focus {
   border-color: #0070f3;
   border-width: 2px;
@@ -167,7 +165,7 @@
   }
 
   .loginTitle {
-    font-size: 22px;
+    font-size: 36px;
   }
 
   .loginInput,
