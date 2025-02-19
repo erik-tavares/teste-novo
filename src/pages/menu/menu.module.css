@@ -1,0 +1,66 @@
+/* Estilização do menu */
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Logo centralizada */
+.menuLogo {
+  display: block;
+  width: 424px;
+  height: 378px;
+  top: 2px;
+  left: -17px;
+}
+
+/* 🔹 Logo Timer */
+.timerLogo {
+  width: 135px;
+  height: 97px;
+  margin-top: 30px; /* Espaço entre o botão acima e a imagem */
+}
+
+/* 🔹 Container dos botões */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+/* 🔹 Estilização dos botões */
+.menuButton {
+  background-color: #3b447b; /* 🔹 Cor original */
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  bottom: 17px;
+}
+
+/* 🔹 Efeito hover */
+.menuButton:hover {
+  background-color: #2c315e;
+}
+
+/* 🔹 Quando "Finalizar Evento" é clicado, fica vermelho */
+.red {
+  background-color: #d9534f !important;
+}
+
+/* 🔹 Quando outros botões são clicados, ficam cinza */
+.gray {
+  background-color: #6c757d !important;
+}

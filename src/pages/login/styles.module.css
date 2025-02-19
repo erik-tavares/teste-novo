@@ -1,0 +1,177 @@
+/* Container principal com fundo branco */
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f8f9fa; /* Fundo branco sutil */
+  font-family: "Arial", sans-serif;
+}
+
+/* Caixa de login */
+.loginBox {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Box-shadow mais visível */
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* 🔹 Estilização do título "Seja Bem-Vindo" */
+.loginTitle {
+  color: #3b447b; /* 🔹 Mesma cor do botão */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 🔹 Pequeno efeito de sombra */
+  size: 36px;
+}
+
+/* 🔹 Estilização do subtítulo "Efetue seu login" */
+.loginSubtitle {
+  color: #07aba0; /* 🔹 Ciano da sua imagem */
+  font-size: 18px; /* 🔹 Aumentado um pouco */
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 55px;
+  font-size: 20px;
+}
+
+/* Wrapper do input para criar efeito de placeholder animado */
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px; /* 🔹 Garante que o tamanho seja igual ao do botão */
+}
+
+/* Estilização do formulário */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 35px; /* 🔹 Mantém um espaçamento adequado */
+}
+
+/* Ajuste de espaçamento entre os inputs */
+.loginInput:not(:first-child) {
+  margin-top: 20px; /* 🔹 Pequeno espaço apenas entre os inputs */
+}
+
+/* 🔹 Estilização do input */
+.loginInput {
+  width: 80%;
+  padding: 12px;
+  border-radius: 5px;
+  padding-right: 40px; /* 🔹 Garante espaço para o ícone */
+  border: 0.5px solid black;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  background-color: white;
+}
+
+/* 🔹 Estiliza o ícone de olho dentro do input */
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
+  user-select: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 🔹 Altera a cor ao passar o mouse no ícone */
+.eyeIcon:hover {
+  color: #0070f3;
+}
+
+/* Placeholder animado */
+.inputWrapper label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  background: white; /* 🔹 Fundo branco para cobrir a borda */
+  padding: 0 5px; /* 🔹 Pequeno espaçamento para cobrir parte da borda */
+}
+
+/* Quando o input está focado OU preenchido */
+.loginInput:focus + label,
+.loginInput:not(:placeholder-shown) + label {
+  top: 1px; /* 🔹 Mantém o label na linha da borda */
+  font-size: 12px;
+  color: #0070f3;
+  background: white; /* 🔹 Mantém o fundo branco para cobrir parte da borda */
+}
+
+/* Quando o input está focado, a borda continua visível, exceto onde a label está */
+.loginInput:focus {
+  border-color: #0070f3;
+  border-width: 2px;
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.3);
+}
+
+/* Ajuste do botão */
+.loginButton {
+  background-color: #3b447b;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 300px;
+  display: block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+/* Estilização da imagem da logo */
+/* Estilização da imagem da logo */
+.loginLogo {
+  display: block;
+  margin: 0 auto 20px; /* Centraliza e adiciona espaçamento abaixo */
+  width: 340px; /* Defina um tamanho maior */
+  height: auto; /* Mantém a proporção original */
+}
+
+/* 🔹 Ajuste automático para telas menores */
+@media (max-width: 480px) {
+  .loginLogo {
+    width: 140px; /* Reduz o tamanho da imagem em telas pequenas */
+  }
+}
+
+/* Efeito hover no botão */
+.loginButton:hover {
+  background-color: #005bb5;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .loginBox {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .loginTitle {
+    font-size: 22px;
+  }
+
+  .loginInput,
+  .loginButton {
+    max-width: 90%;
+  }
+}

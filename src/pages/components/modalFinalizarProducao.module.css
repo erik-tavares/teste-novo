@@ -1,0 +1,223 @@
+/* 🔹 Fundo escuro para a modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* 🔹 Estilo da modal */
+.modal {
+  background: #3b447b;
+  padding: 20px;
+  border-radius: 15px;
+  width: 95%;
+  max-width: 450px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* 🔹 Botão de fechar */
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #00a9a3;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 🔹 Título */
+.modal h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Linha separadora */
+.separator {
+  width: 100%;
+  height: 2px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Wrapper dos inputs */
+.inputWrapper {
+  margin-bottom: 15px;
+  text-align: center;
+  margin-inline: 10px;
+}
+
+.inputWrapperAditivo {
+  margin-bottom: 15px;
+  text-align: center;
+  margin-inline: auto;
+  flex: 1;
+  border: none;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputWrapperAditivo label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* 🔹 Layout para inputs em linha */
+.inputGrid {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inputGrid .inputWrapper {
+  flex: 1;
+  min-width: 140px;
+}
+
+/* 🔹 Rótulos dos inputs */
+.inputWrapper label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* 🔹 Campos de entrada */
+.input {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: white;
+  text-align: center;
+  color: #838282;
+  font-weight: bold;
+}
+
+.select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: white;
+  text-align: center;
+  color: #838282;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 🔹 Botão de "Finalizar" */
+/* 🔹 Botão de "Adicionar" */
+.confirmButton {
+  background: #07aba0;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 16px;
+  border-radius: 15px;
+  width: 350px;
+  height: 56px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.confirmButton:hover {
+  background: #008b85;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+  .modal {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .inputGrid {
+    flex-direction: column;
+  }
+
+  .inputGrid .inputWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    max-height: 85vh;
+  }
+
+  .inputGrid {
+    flex-direction: column;
+  }
+
+  .inputGrid .inputWrapper {
+    width: 100%;
+  }
+
+  .input,
+  .select {
+    font-size: 14px;
+  }
+}
+
+.inputWithUnit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.inputWithPadding {
+  width: 100%;
+  padding: 12px;
+  padding-right: 35px; /* Espaço para a unidade */
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: white;
+  text-align: center;
+  color: #838282;
+  font-weight: bold;
+}
+
+.inputUnit {
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #838282;
+  background: white;
+  padding: 5px;
+}
